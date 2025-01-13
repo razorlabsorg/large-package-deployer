@@ -1,0 +1,15 @@
+[package]
+name = "RazorLargePackageDeployer"
+version = "1.0.0"
+upgrade_policy = "compatible"
+authors = []
+
+[addresses]
+razor_large_package_deployer = "_"
+
+[dev-addresses]
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework/", rev = "8689b9a" }
+
+[dev-dependencies]

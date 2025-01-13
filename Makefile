@@ -8,8 +8,8 @@ APTOS_NETWORK ?= custom
 ARTIFACTS_LEVEL ?= all
 DEFAULT_FUND_AMOUNT ?= 100000000
 DEFAULT_FUNDER_PRIVATE_KEY ?= 0x0
-DEV_ACCOUNT ?= 0x703c20063317af987ab7fc191103d7cd27369ee1322a90d23b174ee393ca9839
-STABLE_SWAP_ADDRESS ?= 0x8ea2ce721a4979fe30217fa974ac8ac9e37bb7f9a3dd79f6198a806cd8e620f0
+DEV_ACCOUNT ?= 0x2b9e64c5fad8a9a881a6657b53af04ed1ad6159734a06842e29ef98b1a5f2181
+LARGE_PACKAGE_ADDRESS ?= 0xa461a44d7a5007a47aa4671f8d897eceac5f98fe67949ca54bc5c556afe04dd7
 
 # ============================= CLEAN ============================= #
 clean:
@@ -44,7 +44,7 @@ upgrade:
 	--skip-fetch-latest-git-deps \
 	--address-name razor_large_package_deployer \
 	--named-addresses "razor_large_package_deployer=$(DEV_ACCOUNT)" \
-	--object-address $(STABLE_SWAP_ADDRESS)
+	--object-address $(LARGE_PACKAGE_ADDRESS)
 
 docs:
 	aptos move document \

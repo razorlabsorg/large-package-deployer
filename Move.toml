@@ -10,6 +10,7 @@ razor_large_package_deployer = "_"
 [dev-addresses]
 
 [dependencies]
-AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework/", rev = "main" }
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-framework.git", rev="mainnet", subdir = "aptos-framework" }
+
 
 [dev-dependencies]
